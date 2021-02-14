@@ -1,0 +1,75 @@
+
+
+footer{
+    width: 850px;
+    margin: 5vh 20vh;
+    padding: 0px 40px;
+    background-color: #fff;
+}
+
+footer .evalue{
+    padding: 5vh 40px;
+}
+
+footer p{
+    margin: 0px 8px;
+    font-size: 1.2em;
+}
+
+footer button{
+    margin: 0px 8px;
+    border-radius: 50%;
+}
+
+footer button.like i{
+    color: #08979d;
+    font-size: 2em;
+}
+
+footer button.nolike i{
+    color: #777;
+    font-size: 2em;
+}
+
+footer button:hover > i{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+footer p.thanks{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+footer .hide{
+    animation: animate_hide_to_top 300ms ease 0s 1 forwards;
+    animation-delay: calc(var(--i) * 200ms);
+}
+
+footer .show{
+    animation: animate_show_to_top 300ms ease 0s 1 forwards;
+    animation-delay: calc(var(--i) * 200ms);
+}
+
+@keyframes animate_hide_to_top{
+    to{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes animate_show_to_top{
+    to{
+        opacity: 1;
+        position: absolute;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
+
+.footer_section_end{
+    height: 5vh;
+}

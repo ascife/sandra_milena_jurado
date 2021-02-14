@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra Milena Jurado</title>
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <script src="public/javascript/index.js"></script>
+</head>
+<body>
+
+    <header class="col">
+        <img src="http://cdn.municipios.com.co/fotos/727-2013-10-12-17-09-314-L.jpeg">
+        <div class='text_creater col cFlex'>
+            <h2>blog creado por:</h2>
+            <p>sandra milena jurado</p>
+        </div>
+
+        <div class='text_main col'>
+            <h3>Tarea 1</h3>
+            <h2>Fundamentos de la Antropología Psicológica</h2>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, voluptas.</p> -->
+        </div>
+    </header>
+
+    <main class="col">
+        <section class="header aiCenter">
+            <p>Fecha de publicacion 14/02/2021</p>
+        </section>
+
+        <section class="text">
+            GRANADA denominada la capital del Ariari, es un municipio que se encuentra en el
+            departamento del Meta a tan sólo 95 Km de la Capital del Meta, caracterizado por ser una
+            región frutícola, agrícola y ganadera, su clima es cálido por ser parte de los llanos orientales.
+        </section>
+
+        <img src="./public/images/localizacion.jpg">
+     
+        <section class="text">
+            Granada cuenta con uno de los Hospitales “HOSPITAL DEPARTAMENTAL,” con una
+            infraestructura para generar atención médica y especializada a toda la comunidad y sus
+            alrededores.
+        </section>
+
+        <img src="./public/images/hospital.jpg">
+
+        <section class="text">
+            COLISEO ALAN JARA es un espacio para eventos deportivos y de espectáculo.
+        </section>
+
+        <img src="./public/images/coliceo.jpg">
+
+        <section class="text">
+            El PARQUE LA PAZ es un espacio de zonas verdes y recreativas para los niños 
+            y la comunidad en general.
+        </section>
+
+        <img src="./public/images/paz.jpg">
+
+        <section class="text">
+            PARQUE LA VIDA COFREM un lugar agradable con amplias zonas recreativas, cabañas y piscinas.
+        </section>
+
+        <img src="./public/images/cofrem.jpg">
+
+        <section class="text">
+            PARQUE ACUATICO KABOB, más conocido como el parque de los dinosaurios, es un sitio con llamativas 
+            atracciones alusivas a los dinosaurios ubicado Km 3 Vía Fte de Oro.
+        </section>
+
+        <img src="./public/images/dinosaurios.jpg">
+
+        <section class="text">
+            RIO ARIARI hermoso y majestuoso por su color y temperatura, muchos turistas vienen de muchas partes 
+            a disfrutar del famoso paseo de Río, la Reggatta o canotaje.
+        </section>
+
+        <img src="./public/images/rio.jpg">
+
+        <section class="text">
+            Los hermosos atardeceres con diversidad de colores es algo que identifica a esta Región de los llanos 
+            orientales (Puente Alcaravan)
+        </section>
+
+        <img src="./public/images/puente.jpg">
+
+        <section class="text">
+            FESTIVAL DE LA COSECHA LLANERA Es una de las fiestas patronales más importantes, la cual se celebra e
+            n agosto de cada año en conmemoración de todos los productos que se producen en la región.
+        </section>
+
+        <img src="./public/images/tractor.jpg">
+
+        <section class="text">
+            SANCOCHO DE GALLINA uno de los platos típicos de mayor consumo en Granada.
+        </section>
+
+        <img src="./public/images/bandeja.jpg">
+
+        <section class="text">
+            CARNE A LA LLANERA es el deleite de todos los visitantes en esta hermosa Región, pues es imposible 
+            venir a Granada y no deleitarse de este delicioso y exquisito plato.
+        </section>
+
+        <img src="./public/images/carne.jpg">
+
+        <section class="text">
+            EL JOROPO es una de las representaciones culturales más notorias en la región, a la cual los 
+            niños empiezan a entrenarse desde sus escasos 4 años, para luego representar y participar 
+            en distintos eventos departamentales, nacionales e internacionales.
+        </section>
+
+        <img src="./public/images/joropo.jpg">
+
+
+        <section class="subtitle">
+            Video 60 Años de Granada
+        </section>
+
+        <section class="container_video cFlex" id="container_video">
+            <video src="./public/images/video.mp4" id="video"></video>
+            <button class="play cFlex" id="button">
+                <i class="material-icons">play_arrow</i>
+            </button>
+        </section>
+
+        <script>
+            {
+                const container_video = document.getElementById("container_video");
+                const c = Index.childrenWithIdOf(container_video);
+
+                c.button.addEventListener("click", Index.toggle({
+                    1: ()=>{
+                        c.button.style.opacity = "0";
+                        c.video.play();
+
+                    },
+                    2: ()=>{
+                        c.button.style.opacity = "1";
+                        c.video.pause();
+
+                    }
+                }))
+            }
+        </script>
+    </main>
+
+
+    <footer class="col">
+        <section class="evalue aiCenter jCenter" id="evalue">
+            <p style="--i: 1;" id="paragraph">Te gusto el article</p>
+            <button class="like" style="--i: 2;" id="button1">
+                <i class="material-icons">mood</i>
+            </button>
+            <button class="nolike" style="--i: 3;" id="button2">
+                <i class="material-icons">mood_bad</i>
+            </button>
+
+            <p class="thanks" id="thanks" style="--i: 4;">¡Gracias por tu opinion!</p>
+        </section>
+    </footer>
+
+    <script>
+        {
+            const evalue = document.getElementById("evalue");
+            const c = Index.childrenWithIdOf(evalue);
+
+            evalue.querySelectorAll("button").forEach(button=>{
+                button.addEventListener("click", ()=>{
+                    c.button1.classList.add("hide");
+                    c.button2.classList.add("hide");
+                    c.paragraph.classList.add("hide");
+                    c.thanks.classList.add("show");
+                })
+            })
+        }
+    </script>
+
+    <section class="footer_section_end"></section>
+    
+</body>
+</html>
