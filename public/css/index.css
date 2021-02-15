@@ -3,11 +3,11 @@ div, button, section, header, nav, main, footer, h2, p, span, label{
     display: flex;
 }
 body{
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    flex-direction: column;
+   width: 100%;
+   height: 100vh;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   flex-direction: column;
 }
 body *{
    z-index: 100;
