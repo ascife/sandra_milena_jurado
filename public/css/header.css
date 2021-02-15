@@ -8,6 +8,8 @@ header{
 }
 
 header img{
+    top: 0px;
+    left: 0px;
     opacity: 0.1;
     position: absolute;
 }
